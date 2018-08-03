@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USGS</title>
+    <title>UN FAO Heatmaps</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/Basic-fancyBox-Gallery.css">
     <link rel="stylesheet" href="css/Collapsible-sidebar-left-or-right--Content-overlay.css">
     <link rel="stylesheet" href="css/dh-row-text-image-right-responsive.css">
     <link rel="stylesheet" href="css/Footer-Basic.css">
@@ -53,7 +55,7 @@
             <p class="text-center" style="margin:14px 0px 3px;margin-top:25px;margin-bottom:3px;"><a class="d-flex flex-column justify-content-center" href="https://ish.aworldbridgelabs.com/homepage" style="margin-top:-12px;color:rgb(17,107,197);font-size:18px;font-family:Roboto, sans-serif;font-weight:bold;width:auto;"><strong>Run UN FAO Heatmap Application</strong><br></a>
                 <img
                     style="background-image:url(&quot;img/Screen%20Shot%202018-08-02%20at%203.10.11%20PM.png&quot;);width:180px;height:155px;margin-top:10px;background-position:center;background-size:contain;"></p>
-            <p class="text-center" style="margin:14px 0px 3px;margin-top:25px;margin-bottom:3px;"><a class="d-flex flex-column justify-content-center" href="https://www.dropbox.com/s/cjo0w30jewibb1c/ISH%20Evaluation%20Video%20Take%201.mp4?dl=0" style="margin-top:-12px;color:rgb(17,107,197);font-size:18px;font-family:Roboto, sans-serif;font-weight:bold;width:auto;"><strong>Evaluation Video</strong><br></a>
+            <p class="text-center" style="margin:14px 0px 3px;margin-top:25px;margin-bottom:3px;"><a class="d-flex flex-column justify-content-center" href="docs/ISH%20EvalVid%20Take%203.mp4" style="margin-top:-12px;color:rgb(17,107,197);font-size:18px;font-family:Roboto, sans-serif;font-weight:bold;width:auto;"><strong>Evaluation Video</strong><br></a>
                 <img
                     style="background-image:url(&quot;img/Screen%20Shot%202018-08-02%20at%203.10.11%20PM.png&quot;);width:180px;height:155px;margin-top:10px;background-position:center;background-size:contain;"></p>
             <p class="text-center" style="margin-top:14px;margin-bottom:3px;"><a class="align-items-center" id="evavid" style="margin-top:30px;font-size:18px;font-family:Roboto, sans-serif;font-weight:bold;color:rgb(17,107,197);"><strong>UN Heatmap Source Code (GitHub)</strong></a><img style="background-image:url(&quot;img/Screen%20Shot%202018-08-02%20at%203.10.21%20PM.png&quot;);width:250px;height:155px;margin-top:10px;background-position:center;background-size:contain;background-repeat:no-repeat;"></p>
@@ -86,8 +88,8 @@
         <h1 style="font-size:11px;font-family:Roboto, sans-serif;">FAO and its partners have been at the forefront of tackling FAW and continue to support prevention, early warning, and effective response. An integral part of FAO’s sustainable management program for FAW in Africa is the FAW Monitoring and Early
             Warning System (FAMEWS) mobile app. Data from the app provides valuable insights on how the insect populations change over time with ecology, to improve knowledge of its behavior in Africa and guide best management.”<br></h1>
         <h1 style="font-size:11px;font-family:Roboto, sans-serif;margin-top:17px;"><a style="color:rgb(0,107,214);font-size:15px;"><strong><em>Evaluation Video&nbsp;</em></strong><br></a><br></h1>
-        <h1 style="font-size:13px;font-family:Roboto, sans-serif;margin-top:0px;margin-bottom:55px;"><a href="https://www.dropbox.com/s/8nip9oryqu19ile/_USGS%20Evalutation%20Video%20Take%204.mp4?dl=0">Click this link&nbsp;</a>or the picture below to play the video. The video will stream after a pause while beginning to download, and you’ll have
-            the option to expand to the window size, You may also downoad the video<br></h1><a href="https://www.dropbox.com/s/8nip9oryqu19ile/_USGS%20Evalutation%20Video%20Take%204.mp4?dl=0" style="width:50%;height:400px;"><img style="background-image:url(&quot;img/ish1.gif&quot;);height:400px;width:50%;background-position:center;background-size:cover;background-repeat:no-repeat;"></a>
+        <h1 style="font-size:13px;font-family:Roboto, sans-serif;margin-top:0px;margin-bottom:55px;"><a href="docs/ISH%20EvalVid%20Take%203.mp4">Click this link&nbsp;</a>or the picture below to play the video. The video will stream after a pause while beginning to download, and you’ll have the option to expand to the window size, You may also downoad
+            the video.<br></h1><a href="docs/ISH%20EvalVid%20Take%203.mp4" style="width:50%;height:400px;"><img style="background-image:url(&quot;img/ish1.gif&quot;);height:400px;width:50%;background-position:center;background-size:cover;background-repeat:no-repeat;"></a>
         <h1
             style="font-family:Roboto, sans-serif;font-size:17px;margin-top:25px;color:rgb(17,107,197);"><strong><em>The Application</em></strong><br></h1>
             <h1 style="font-size:11px;font-family:Roboto, sans-serif;margin-top:15px;">The UN FAO Heatmaps application is a completely open source application based on NASA-ESA WebWorldWind. Programming code utilized a variety of tools and applications, including Javascript, HTML5, CSS, Python, and server-side programming -
@@ -110,9 +112,8 @@
                     <h1 style="font-size:11px;font-family:Roboto, sans-serif;margin-top:10px;">4. Server-side data storage and WebWorldWind layer foundation<br></h1>
                     <h1 style="font-size:11px;font-family:Roboto, sans-serif;margin-top:10px;">5. Data visualization of WWW on the application, GUI functionality and client calls.<br></h1><img style="background-image:url(&quot;img/Screen%20Shot%202018-08-02%20at%203.06.00%20PM.png&quot;);width:100%;height:216px;background-position:center;background-size:contain;background-repeat:no-repeat;margin-top:4px;">
                     <h1
-                        style="font-size:17px;font-family:Roboto, sans-serif;font-weight:bold;margin-top:20px;color:rgb(17,107,197);"><a href="https://www.dropbox.com/s/lavkg0qv4xy1nlz/EvalVidDoc_USGS_Full_Tutorial_v3.pdf?dl=0"><strong><em>Evaluation Video Documentation - Slides from the Evaluation Video</em></strong><br></a><br></h1>
-                        <div class="row clearmargin clearpadding row-image-txt"
-                            style="background-color:rgb(255,255,255);">
+                        style="font-size:17px;font-family:Roboto, sans-serif;font-weight:bold;margin-top:20px;color:rgb(17,107,197);"><a href="docs/Evaluation%20Video_FullTutorial_ISH_v5.pdf"><strong><em>Evaluation Video Documentation - Slides from the Evaluation Video</em></strong><br></a><br></h1>
+                        <div class="row clearmargin clearpadding row-image-txt" style="background-color:rgb(255,255,255);">
                             <div class="col-xs-12 col-sm-6 col-md-6 clearmargin clearpadding col-sm-push-6" style="background-size:contain;height:400px;background-position:center;background-repeat:no-repeat;background-image:url(&quot;img/Screen%20Shot%202018-08-02%20at%203.16.30%20PM.png&quot;);">
                                 <div></div>
                             </div>
@@ -122,8 +123,28 @@
                                     the PDF document.<br></p>
                             </div>
                         </div>
-                        <h1 style="font-size:17px;font-family:Roboto, sans-serif;font-weight:bold;margin-top:20px;color:rgb(17,107,197);"><strong><em>Server-Side and Technical Documentation/Description (Under development)</em></strong><br></h1>
-                        <h1 style="font-size:13px;font-family:Roboto, sans-serif;margin-top:15px;margin-bottom:55px;">Click&nbsp;<a>HERE</a>&nbsp;to view a separate page on the UN FAO Heatmap technical documentation.<br></h1>
+                        <h1 style="font-size:17px;font-family:Roboto, sans-serif;font-weight:bold;margin-top:20px;color:rgb(17,107,197);"><strong><em>WHS Earth Viewer Data Workflow Use Cases</em></strong><br></h1>
+                        <h1 style="font-size:11px;font-family:Roboto, sans-serif;margin-top:15px;">Working The&nbsp;following workflow diagrams illustrate the programming and workflow logic for possible interactions between clients and the application.<br></h1>
+                        <div class="container">
+                            <div class="row flex-box flex-wrap-wrap">
+                                <div class="col-sm-4 d-flex flex-column flex-box flex-justify-center flex-align-center">
+                                    <h1 style="font-size:13px;font-family:Roboto, sans-serif;"><strong>Use Case: Data History</strong><br></h1><a href="img/UseCase_ISH_DataHistory.jpg" class="fancybox" rel="gallery1" title=""><img class="img-fluid" src="img/UseCase_ISH_DataHistory.jpg"></a></div>
+                                <div class="col-sm-4 d-flex flex-column flex-box flex-justify-center flex-align-center">
+                                    <h1 style="font-size:13px;font-family:Roboto, sans-serif;"><strong>Use Case: Heatmap</strong><br></h1><a href="img/UseCase_ISH_Heatmap.jpg" class="fancybox" rel="gallery1" title=""><img class="img-fluid" src="img/UseCase_ISH_Heatmap.jpg"></a></div>
+                                <div class="col-sm-4 d-flex flex-column flex-box flex-justify-center flex-align-center">
+                                    <h1 style="font-size:13px;font-family:Roboto, sans-serif;"><strong>Use Case: Login</strong><br></h1><a href="img/UseCase_ISH_Login.jpg" class="fancybox" rel="gallery1" title=""><img class="img-fluid" src="img/UseCase_ISH_Login.jpg"></a></div>
+                                <div class="col-sm-4 d-flex flex-column flex-box flex-justify-center flex-align-center">
+                                    <h1 style="font-size:13px;font-family:Roboto, sans-serif;"><strong>Use Case: New Entry</strong><br></h1><a href="img/UseCase_ISH_NewEntry.jpg" class="fancybox" rel="gallery1" title=""><img class="img-fluid" src="img/UseCase_ISH_NewEntry.jpg"></a></div>
+                                <div class="col-sm-4 d-flex flex-column flex-box flex-justify-center flex-align-center">
+                                    <h1 style="font-size:13px;font-family:Roboto, sans-serif;"><strong>Use Case: Recovery</strong><br></h1><a href="img/UseCase_ISH_Recovery.jpg" class="fancybox" rel="gallery1" title=""><img class="img-fluid" src="img/UseCase_ISH_Recovery.jpg"></a></div>
+                                <div class="col-sm-4 d-flex flex-column flex-box flex-justify-center flex-align-center">
+                                    <h1 style="font-size:13px;font-family:Roboto, sans-serif;"><strong>Use Case: Sign Up</strong><br></h1><a href="img/UseCase_ISH_SignUp.jpg" class="fancybox" rel="gallery1" title=""><img class="img-fluid" src="img/UseCase_ISH_SignUp.jpg"></a></div>
+                                <div class="col-sm-4 d-flex flex-column flex-box flex-justify-center flex-align-center">
+                                    <h1 style="font-size:13px;font-family:Roboto, sans-serif;"><strong>Use Case: User Home</strong><br></h1><a href="img/UseCase_ISH_UserHome.jpg" class="fancybox" rel="gallery1" title=""><img class="img-fluid" src="img/UseCase_ISH_UserHome.jpg"></a></div>
+                            </div>
+                        </div>
+                        <h1 style="font-size:17px;font-family:Roboto, sans-serif;font-weight:bold;margin-top:20px;color:rgb(17,107,197);"><strong><em>Server-Side and Technical Documentation/Description</em></strong><br></h1>
+                        <h1 style="font-size:13px;font-family:Roboto, sans-serif;margin-top:15px;margin-bottom:55px;">Click&nbsp;<a href="docs/ISH%20Technical%20Documentation_updated.docx">HERE</a>&nbsp;to download a separate page of the UN FAO Heatmap technical documentation.<br></h1>
                         <h1 style="font-size:17px;font-family:Roboto, sans-serif;font-weight:bold;margin-top:20px;color:rgb(17,107,197);"><strong><em>Meet the Team</em></strong><br></h1>
                         <h1 style="font-size:11px;font-family:Roboto, sans-serif;margin-top:15px;">Mentor: Professor Ron Fortunato<br></h1>
                         <h1 style="font-size:11px;font-family:Roboto, sans-serif;margin-top:0px;">Assistant Mentor: Mr. Anson Zhao<br></h1>
@@ -144,7 +165,10 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+    <script src="js/Basic-fancyBox-Gallery.js"></script>
     <script src="js/Collapsible-sidebar-left-or-right--Content-overlay.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
     <script src="js/Right-Sidebar.js"></script>
